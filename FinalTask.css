@@ -1,0 +1,50 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: linear-gradient(to right, #f6f6f6, #435ef9);
+}
+ 
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+ 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  
+}
+ 
+.card {
+  border: 1px solid #0e0d0d;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background: linear-gradient(to right, #435ef9 ,#f6f6f6 ,#2d2f2e);
+}
+ 
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+ 
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+ 
+.cart-box {
+  margin-left: auto;
+  font-weight: bold;
+}
+ 
+@media(max-width: 600px) {
+  .controls {
+    flex-direction: column;
+  }
+}
+ 
